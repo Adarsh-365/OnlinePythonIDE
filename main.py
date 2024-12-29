@@ -31,7 +31,7 @@ if save_file and file_name.strip():
 if load_file and file_name.strip() and os.path.exists(file_name):
     with open(file_name, "r") as f:
         code = f.read()
-    st.experimental_rerun()  # Refresh UI with loaded code
+  
 elif load_file and not os.path.exists(file_name):
     st.sidebar.error("File not found!")
 
